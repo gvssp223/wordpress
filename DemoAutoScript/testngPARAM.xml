@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">	
+    <test thread-count='5' name="Test">
+      <parameter name="username" value="admin"/>
+      <parameter name="password" value="manager"/>
+         <classes>
+           <class name="inhertTestng.Testlogin_PARAM"/>
+         </classes>
+    </test>
+    
+    <test thread-count='5' name="TestInvalid">
+      <parameter name="username" value="ad min"/>
+      <parameter name="password" value="manager"/>
+         <classes>
+           <class name="inhertTestng.Testlogin_PARAM"/>
+         </classes>
+    </test>
+    
+    <test thread-count='5' name="TestInvalid1">
+      <parameter name="username" value=" "/>
+      <parameter name="password" value="manager"/>
+         <classes>
+           <class name="inhertTestng.Testlogin_PARAM"/>
+         </classes>
+    </test>
+</suite> 
